@@ -28,4 +28,8 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    //compile('org.projectlombok:lombok') 에러 발생... gradle5부터는 어노테이션 구별해서 추가해야 됨..
+    compileOnly('org.projectlombok:lombok:1.18.10')
+    annotationProcessor('org.projectlombok:lombok:1.18.10')
 }
